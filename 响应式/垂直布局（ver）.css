@@ -1,2 +1,4 @@
 main aside{float:none;}
+/* aside浮动为默认值，不发生浮动，会产生分行 */
 main section{margin-left: 0;}
+/* section的左外边距为0px */

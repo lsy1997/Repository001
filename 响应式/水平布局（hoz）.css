@@ -1,3 +1,5 @@
 main{clear:both;}
 main aside{float: left;width: 150px;}
+/* aside左浮动，大小为150px，不产生分行 */
 main section{margin-left:150px;}
+/* section的左外边距为150px */
