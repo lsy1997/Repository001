@@ -14,7 +14,8 @@
             if (percent>=100){
                 document.title = title1;
                 clearInterval(timer);
-                // 如果进度>=100，显示title2（加载完成），并清除定时任务
+                alert('complete')
+                // 如果进度>=100，显示title2（加载完成），清除定时任务,并弹窗提示'complete'
             }else{
                 percent = percent+1;
                 document.title= title2+'['+percent+'%]';
