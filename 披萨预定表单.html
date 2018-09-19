@@ -10,10 +10,10 @@
     <form method="POST"
           enctype="application/x-www-form-urlencoded"
           action="practise.html">
-        <div align="center"><label>姓名：<input name="custname"></label></div>
-        <div align="center"><label>电话：<input type="tel" name="custtel"></label></div>
-        <div align="center"><label>邮箱：<input type="email" name="custemail"></label></div>
-        <div align="center"><label>地址：<input name="custaddress"></label></div>
+        <div align="center"><label>姓名：<input name="custname" required></label></div>
+        <div align="center"><label>电话：<input type="tel" name="custtel" required></label></div>
+        <div align="center"><label>邮箱：<input type="email" name="custemail" required></label></div>
+        <div align="center"><label>地址：<input name="custaddress" required></label></div>
         <!-- label元素无法通过属性align改变排版位置，所以需要定义div元素，div元素会自动分行 -->
         <fieldset>
             <legend align="center">披萨尺寸</legend>
