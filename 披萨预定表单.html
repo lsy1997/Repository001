@@ -8,26 +8,26 @@
 <body>
     <h1 align="center">披萨预定</h1>
     <form>
-        <div align="center"><label>姓名：<input></label></div>
-        <div align="center"><label>电话：<input type="tel"></label></div>
-        <div align="center"><label>邮箱：<input type="email"></label></div>
-        <div align="center"><label>地址：<input></label></div>
+        <div align="center"><label>姓名：<input name="custname"></label></div>
+        <div align="center"><label>电话：<input type="tel" name="custtel"></label></div>
+        <div align="center"><label>邮箱：<input type="email" name="custemail"></label></div>
+        <div align="center"><label>地址：<input name="custaddress"></label></div>
         <!-- label元素无法通过属性align改变排版位置，所以需要定义div元素，div元素会自动分行 -->
         <fieldset>
             <legend align="center">披萨尺寸</legend>
-            <div align="center"><label><input type="radio" name="size">小</label></div>
-            <div align="center"><label><input type="radio" name="size">中</label></div>
-            <div align="center"><label><input type="radio" name="size">大</label></div>
+            <div align="center"><label><input type="radio" name="size" value="samll">小</label></div>
+            <div align="center"><label><input type="radio" name="size" value="medium">中</label></div>
+            <div align="center"><label><input type="radio" name="size" value="large">大</label></div>
         </fieldset>
         <fieldset>
             <legend align="center">披萨配料</legend>
-            <div align="center"><label><input type="checkbox" name="kind">培根</label></div>
-            <div align="center"><label><input type="checkbox" name="kind">奶酪</label></div>
-            <div align="center"><label><input type="checkbox" name="kind">虾仁</label></div>
-            <div align="center"><label><input type="checkbox" name="kind">菠萝</label></div>
+            <div align="center"><label><input type="checkbox" name="topping" value="bacon">培根</label></div>
+            <div align="center"><label><input type="checkbox" name="topping" value="cheese">奶酪</label></div>
+            <div align="center"><label><input type="checkbox" name="topping" value="shrimp meat">虾仁</label></div>
+            <div align="center"><label><input type="checkbox" name="topping" value="pineapple">菠萝</label></div>
         </fieldset>
         <fieldset>
-            <div align="center"><label>配送时间：<input type="time" min="12:00" max="22:00" step="60"></label></div>
+            <div align="center"><label>配送时间：<input type="time" min="12:00" max="22:00" step="60" name="delivery"></label></div>
             <!-- step设置为60，两个有效时间的间隔即为60s（1min），时间选择栏的精度就不会为秒（时:分:秒）了，而是显示成分（时:分） -->
         </fieldset>
         <fieldset><div align="center"><button>提交订单</button></div></fieldset>
