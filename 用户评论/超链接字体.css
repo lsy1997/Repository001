@@ -1,0 +1,4 @@
+a:link,a:hover{color:#034cff;text-decoration:none;font-size:13px;}
+/* 未访问、悬浮，黑色，字号13px  */
+a:visited,a:active{color:#034cff;text-decoration:none;font-size:13px;}
+/* 已访问、点击，黑色，字号13px */
